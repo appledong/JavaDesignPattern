@@ -20,20 +20,16 @@ public class ObserveDesignTest {
 		 * 手动观察者模式测试：
 		 */
 		WetherData wetherData = new WetherData();
-		WdObserveImpl wdObserveImpl = new WdObserveImpl();
-		XdObserveImpl xdObserveImpl = new XdObserveImpl();
-		wetherData.registerObserve(wdObserveImpl);
-		wetherData.registerObserve(xdObserveImpl);
+		WdObserveImpl wdObserveImpl = new WdObserveImpl(wetherData);
+		XdObserveImpl xdObserveImpl = new XdObserveImpl(wetherData);
 		wetherData.setAir(new Air(50, 70, 60));
 		wetherData.changAirData();
 		/**
 		 * java内置观察者模式
 		 */
 		JavaWeatherData javaWeatherData = new JavaWeatherData();
-		JavaWdObserveImpl javaWdObserveImpl = new JavaWdObserveImpl();
-		JavaXdObserveImpl javaXdObserveImpl = new JavaXdObserveImpl();
-		javaWeatherData.addObserver(javaWdObserveImpl);
-		javaWeatherData.addObserver(javaXdObserveImpl);
+		JavaWdObserveImpl javaWdObserveImpl = new JavaWdObserveImpl(javaWeatherData);
+		JavaXdObserveImpl javaXdObserveImpl = new JavaXdObserveImpl(javaWeatherData);
 		javaWeatherData.setAir(new Air(50, 70, 60));
 		javaWeatherData.changAirData();
 	}

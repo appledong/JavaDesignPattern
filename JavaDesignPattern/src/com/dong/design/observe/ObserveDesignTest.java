@@ -1,11 +1,5 @@
 package com.dong.design.observe;
 
-import com.dong.design.observe.interimpl.JavaWdObserveImpl;
-import com.dong.design.observe.interimpl.JavaWeatherData;
-import com.dong.design.observe.interimpl.JavaXdObserveImpl;
-import com.dong.design.observe.interimpl.WdObserveImpl;
-import com.dong.design.observe.interimpl.WetherData;
-import com.dong.design.observe.interimpl.XdObserveImpl;
 
 /**
  * 

@@ -1,11 +1,7 @@
-package com.dong.design.observe.interimpl;
+package com.dong.design.observe;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.dong.design.observe.Air;
-import com.dong.design.observe.inter.Observe;
-import com.dong.design.observe.inter.Subject;
 
 /**
  * 

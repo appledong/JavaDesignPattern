@@ -1,9 +1,7 @@
-package com.dong.design.observe.interimpl;
+package com.dong.design.observe;
 
 import java.util.Observable;
 import java.util.Observer;
-
-import com.dong.design.observe.Air;
 
 /**
  * 

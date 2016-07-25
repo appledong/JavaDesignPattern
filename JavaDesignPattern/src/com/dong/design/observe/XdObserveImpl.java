@@ -1,7 +1,5 @@
-package com.dong.design.observe.interimpl;
+package com.dong.design.observe;
 
-import com.dong.design.observe.Air;
-import com.dong.design.observe.inter.Observe;
 
 public class XdObserveImpl implements Observe {
 

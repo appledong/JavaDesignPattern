@@ -1,6 +1,5 @@
-package com.dong.design.observe.inter;
+package com.dong.design.observe;
 
-import com.dong.design.observe.Air;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package com.dong.design.factory.factory_simpleness;
+package com.dong.design.factory.factory;
 
 /****
  * 具体的产品

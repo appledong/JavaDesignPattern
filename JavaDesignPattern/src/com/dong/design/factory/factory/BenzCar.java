@@ -1,5 +1,4 @@
-package com.dong.design.factory.factory_abstract;
-
+package com.dong.design.factory.factory;
 
 public class BenzCar implements Car {
 

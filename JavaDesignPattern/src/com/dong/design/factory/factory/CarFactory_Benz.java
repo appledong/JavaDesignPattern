@@ -1,4 +1,4 @@
-package com.dong.design.factory.factory_method;
+package com.dong.design.factory.factory;
 
 public class CarFactory_Benz implements CarFactory{
 

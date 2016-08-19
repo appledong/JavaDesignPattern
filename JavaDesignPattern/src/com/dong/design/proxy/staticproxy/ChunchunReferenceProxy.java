@@ -3,13 +3,16 @@ package com.dong.design.proxy.staticproxy;
 
 
 /***
- * @author: dzdonga 实现的主要功能: 春春代理，代理及经纪人，肯定要有被代理对象的所有的功能。
+ * @author: dzdonga 
+ * 引用代理的代理对象：持有春春对象并代理了唱歌的行为
+ * 		1. 处理春春的唱歌行为
+ * 		2. 处理出场费和善后等行为
  */
-public class ChunchunProxy implements ArtInterface {
+public class ChunchunReferenceProxy implements ReferenceInterface {
 
     private Chunchun chunchun;
 
-    public ChunchunProxy() {
+    public ChunchunReferenceProxy() {
         super();
         this.chunchun = new Chunchun();
     }

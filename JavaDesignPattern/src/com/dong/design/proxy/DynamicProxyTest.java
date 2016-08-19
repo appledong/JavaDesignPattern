@@ -1,5 +1,9 @@
 
-package com.dong.design.proxy.dynamicproxy;
+package com.dong.design.proxy;
+
+import com.dong.design.proxy.dynamicproxy.ArtInterface;
+import com.dong.design.proxy.dynamicproxy.Chunchun;
+import com.dong.design.proxy.dynamicproxy.MyInvocationHandler;
 
 
 /*** 
@@ -12,7 +16,7 @@ package com.dong.design.proxy.dynamicproxy;
 public class DynamicProxyTest {
 
     public static void main(String[] args) {
-        ArtInterface artInterface = new Chunchun();
+        ArtInterface artInterface = new Chunchun();//对象可以配置到xml文件中去，保持代码的开闭原则
         MyInvocationHandler myInvocationHandler = new MyInvocationHandler(artInterface);
         ArtInterface proxy = (ArtInterface) myInvocationHandler.getProxy();
         proxy.song();
